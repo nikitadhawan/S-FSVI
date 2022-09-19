@@ -116,6 +116,7 @@ def read_config_and_run(
     if TEST:
         simplify_config(config)
     logdir = run_config(config, runner=runner)
+    config['seed'] = 10
     return logdir
 
 
